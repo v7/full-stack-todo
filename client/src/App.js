@@ -36,6 +36,7 @@ class App extends Component {
       }
     })
     } else {
+      window.localStorage.removeItem('token')
       this.setState({auth: false, user: {name: '', email: '', _id: ''} }, ()=>{
       })
     }
