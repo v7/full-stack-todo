@@ -1,0 +1,26 @@
+{
+  "name": "full-stack-todo",
+  "version": "1.0.0",
+  "description": "full stack todo app react+ express + mongodb",
+  "main": "./server/app.js",
+  "scripts": {
+    "inst": "cd server/ && npm install && cd ../client/ && npm install && cd ..",
+    "build": "cd client/ && npm run build && cd ..",
+    "start": "cd server/ && node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/77ukhtar/full-stack-todo.git"
+  },
+  "keywords": [
+    "react.js",
+    "express",
+    "fullstack"
+  ],
+  "author": "mukhtar ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/77ukhtar/full-stack-todo/issues"
+  },
+  "homepage": "https://github.com/77ukhtar/full-stack-todo#readme"
+}
