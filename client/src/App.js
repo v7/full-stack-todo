@@ -33,12 +33,13 @@ class App extends Component {
       console.log(res)
       if(res.data.user){
         this.setState({user: res.data.user, auth: true})
+      } else {
+        window.localStorage.removeItem('token')
+       this.setState({auth: false, user: {name: '', email: '', _id: ''} })
       }
     })
     } else {
-      window.localStorage.removeItem('token')
-      this.setState({auth: false, user: {name: '', email: '', _id: ''} }, ()=>{
-      })
+      this.setState({auth: false, user: {name: '', email: '', _id: ''} })
     }
   }
   render() {
